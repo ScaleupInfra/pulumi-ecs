@@ -136,6 +136,14 @@ Ensure that your AWS credentials are configured correctly using the AWS CLI:
    ```
 
    This command will provision all necessary AWS resources and deploy your application.
+7. Accessing the Application
+   After successfully running the pulumi up command, Pulumi will provide an output containing the URL of the Application Load Balancer. You can use this URL to access your deployed application in a web browser. The URL will look something like this:
+
+   ```bash
+    http://infrasityalb-<random-string>.<your-aws-region>.elb.amazonaws.com
+    ```
+   Save this URL as you will need it to access your application.
+
 
 ## Architecture
 
