@@ -98,21 +98,40 @@ Ensure you have the following tools installed before proceeding:
    cd node-app
    npm install
    ```
+2. Project Initialization
+Before deploying the infrastructure, initiate a new Pulumi project with the following command:
 
-2. **Configure AWS Credentials**
+    ```bash
+    pulumi new aws-typescript
+    ```
 
-   Make sure that your AWS credentials are configured properly. You can configure it using the following command:
+3. Install Dependencies
+Navigate to the app directory and install the necessary npm packages:
+
+    ```bash 
+    cd node-app
+    npm install
+    ```
+
+4. Configure AWS Credentials
+Ensure that your AWS credentials are configured correctly using the AWS CLI:
+
+    ```bash
+    aws configure
+    ```
+
+5. Configure AWS Region 
+
 
    ```bash
    pulumi configure aws:region <your-aws-region>
    ```
 
-3. **Deploying with Pulumi**
+6. **Deploying with Pulumi**
 
    Navigate back to the project's root directory and run the following commands to deploy your infrastructure:
 
    ```bash
-   cd ..
    pulumi up
    ```
 
